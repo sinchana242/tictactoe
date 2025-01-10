@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="home-screen" class="screen">
+        <h1>Tic Tac Toe</h1>
+        <button id="two-player-btn">Two Players</button>
+        <button id="single-player-btn">Play with System</button>
+    </div>
+
+    <div id="name-input-screen" class="screen hidden">
+        <h2>Enter Player Names</h2>
+        <div id="two-player-names" class="hidden">
+            <input type="text" id="player1-name" placeholder="Player 1 Name">
+            <input type="text" id="player2-name" placeholder="Player 2 Name">
+        </div>
+        <div id="single-player-name" class="hidden">
+            <input type="text" id="player-name" placeholder="Enter Your Name">
+        </div>
+        <button id="start-game">Start Game</button>
+    </div>
+
+    <div id="game-screen" class="screen hidden">
+        <h1 id="game-title"></h1>
+        <div id="game-board">
+            <!-- 9 cells for the board -->
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+        <div class="status" id="status-message"></div>
+        <button id="restart">Restart Game</button>
+    </div>
+
+    <div id="result-popup" class="hidden">
+        <div class="popup">
+            <p id="result-message"></p>
+            <button id="back-to-home">Back to Home</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
